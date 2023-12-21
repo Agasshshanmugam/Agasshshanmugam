@@ -1,0 +1,55 @@
+[21/#include <stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number: ");
+    scanf("%d",&a);
+    printf("The factorial of %d is %d",n,fac(n));
+}
+int fac(int a)
+{
+    if(a<=2)
+    {
+        return a;
+    }
+    else
+    {
+    return (a*fac(a-1));
+}
+
+}
+#include<stdio.h>
+int main()
+{
+    int a=0,b=1,n;
+    printf("Enter num : ");
+    scanf("%d",&n);
+    printf("Fibonacci series : ");
+    for(int i=0;i<=n;i++)
+    {
+        printf("%d ",fib(i));
+    }
+}
+int fib(int n)
+{
+    if(n<=1){
+        return n;
+    }
+    else {
+        return fib(n-1)+fib(n-2);
+    }
+}
+#include<stdio.h>
+int main(){
+    int a=0,b=1,n,c;
+    printf("Enter num : ");
+    scanf("%d",&n);
+    printf("Fibonacci series : ");
+    printf("%d %d ",a,b);
+    for(int i=1;i<=n-2;i++){
+        c=a+b;
+        a=b;
+        b=c;
+        printf("%d ",c);
+    }
+}
